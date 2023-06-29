@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import "./globals.css";
 
 export default function Home() {
@@ -13,12 +14,14 @@ export default function Home() {
           className="pt-[10px] "
         />
 
-        <button
-          className="text-black rounded-3xl h-10
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mT-70"
-        >
-          Commander
-        </button>
+        <Link href="/commander">
+          <button
+            className="text-black rounded-3xl h-10
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold "
+          >
+            Commander
+          </button>
+        </Link>
 
         <div className="flex space-x-4 m-auto text-center">
           <div>

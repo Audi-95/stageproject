@@ -7,13 +7,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html>
       <header className="bg-black">
         <div className="text-white flex space-x-20">
-          <Image
-            src="/logo.png"
-            height={0}
-            width={100}
-            alt="Logo"
-            className="pt-[10px] "
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              height={0}
+              width={100}
+              alt="Logo"
+              className="pt-[10px] "
+            />
+          </Link>
 
           <div className="flex space-x-4 text-center mt-10 ">
             <div className="flex space-x-4 text-center ">
@@ -84,14 +86,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </ul>
 
           <div className="flex space-x-4 text-center mt-[8px] pl-[800px]">
-            <Image
-              src="/facebook.png"
-              height={0}
-              width={40}
-              alt="logo facebook"
-            />
+            <Link href="https://www.facebook.com">
+              <Image
+                src="/facebook.png"
+                height={0}
+                width={40}
+                alt="logo facebook"
+              />
+            </Link>
 
-            <Link href="https://www.instagram.com">
+            <Link href="https://www.instagram.com/audibinks95/">
               <Image
                 src="/instagram.png"
                 height={0}
@@ -100,18 +104,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
             </Link>
 
-            <Image
-              src="/twitter.png"
-              height={0}
-              width={40}
-              alt="logo twitter"
-            />
-            <Image
-              src="/discord.png"
-              height={0}
-              width={40}
-              alt="logo discord"
-            />
+            <Link href="https://twitter.com">
+              <Image
+                src="/twitter.png"
+                height={0}
+                width={40}
+                alt="logo twitter"
+              />
+            </Link>
+
+            <Link href="https://discord.com">
+              <Image
+                src="/discord.png"
+                height={0}
+                width={40}
+                alt="logo discord"
+              />
+            </Link>
           </div>
         </div>
 
