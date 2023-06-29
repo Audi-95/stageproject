@@ -4,7 +4,7 @@ import "./globals.css";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <html>
       <header className="bg-black">
         <div className="text-white flex space-x-20">
           <Image
@@ -119,6 +119,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <p>Copyright © 2023 BERSERK Corporation</p>
       </footer>
-    </>
+    </html>
   );
 }
