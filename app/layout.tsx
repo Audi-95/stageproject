@@ -51,13 +51,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
 
               <div className="flex space-x-4 text-center pl-[400px]">
-                <Image
-                  src="/compte.png"
-                  height={0}
-                  width={40}
-                  alt="compte"
-                  className="text-black h-10 "
-                />
+                <div className="w-[40px]">
+                  <Image
+                    src="/compte.png"
+                    height={0}
+                    width={100}
+                    alt="compte"
+                    className="w-full h-auto text-black "
+                  />
+                </div>
 
                 <Image
                   src="/panier2.png"
