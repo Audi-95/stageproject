@@ -9,6 +9,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      full: "100%",
+      16: "4rem",
+    },
+
     extend: {
       colors: {
         "fuzzy-wuzzy-brown": {
@@ -36,6 +44,19 @@ module.exports = {
           800: "#7c1692",
           900: "#681877",
           950: "#440250",
+        },
+        "mine-shaft": {
+          50: "#f7f6f6",
+          100: "#e4e3e3",
+          200: "#c9c6c6",
+          300: "#a7a1a2",
+          400: "#847d7e",
+          500: "#696364",
+          600: "#534e4e",
+          700: "#454041",
+          800: "#393636",
+          900: "#322f30",
+          950: "#1a1919",
         },
       },
     },
