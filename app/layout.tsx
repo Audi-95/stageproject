@@ -68,6 +68,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   alt="panier"
                   className="h-10 w-10"
                 />
+
+                <Image
+                  src="/materiel.png"
+                  height={0}
+                  width={100}
+                  alt="materiel"
+                  className="h-10 w-10"
+                />
               </div>
             </div>
           </div>
