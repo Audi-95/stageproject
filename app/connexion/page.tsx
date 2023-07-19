@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Compte() {
+export default function Connection() {
   return (
     <body className="bg-melrose-300">
       <div className="pt-[120px] text-center ">
@@ -45,7 +45,7 @@ export default function Compte() {
 
             <br></br>
             <div>
-              <Link href="/compte2" className="text-blue-600 ">
+              <Link href="/inscription" className="text-blue-600 ">
                 Créer un compte
               </Link>
             </div>

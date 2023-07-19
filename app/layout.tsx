@@ -41,7 +41,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
               <div className="flex space-x-4 text-center pl-[570px]">
                 <div className="h-10 w-10">
-                  <Link href="/compte">
+                  <Link href="/connexion">
                     <Image
                       src="/compte.png"
                       height={0}

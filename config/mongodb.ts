@@ -1,7 +1,7 @@
 import { MongoClient, Db } from "mongodb";
 const uri = "ton-uri";
 
-export async function connectToDatabase(): Promise<{
+export async function connectionBaseDeDonner(): Promise<{
   client: MongoClient;
   db: Db;
 }> {
