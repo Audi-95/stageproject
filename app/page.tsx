@@ -14,12 +14,12 @@ export default function Home() {
           className="pt-[10px]"
         />
         <Link href="/commander">
-          <button className="text-black rounded-3xl h-10 w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold ml-[90px]">
+          <button className="text-black rounded-3xl h-10 w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold ">
             Commander
           </button>
         </Link>
 
-        <div className="flex space-x-4 m-auto text-center justify-center">
+        <div className="flex space-x-4 m-auto text-center justify-center mt-[70px]">
           <div className="flex flex-col items-center w-[500px]">
             <div className="flex justify-center">
               <div className="bg-cover">
@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="text-center">
           <div className="flex justify-center">
-            <div className="w-[800px] mt-20">
+            <div className="w-[1000px] mt-[100px]">
               <Image
                 src="/piece.jpg"
                 width={600}

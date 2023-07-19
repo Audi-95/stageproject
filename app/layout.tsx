@@ -14,68 +14,63 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 height={0}
                 width={100}
                 alt="Logo"
-                className="w-full h-auto pt-[10px]"
+                className="md:h-[140px] md:w-[130px] max-md:h-[140px] max-md:w-[130px] "
               />
             </Link>
 
             <div className="flex space-x-4 text-center mt-10 ">
               <div className="flex space-x-4 text-center ">
                 <Link href="/produits">
-                  <button
-                    className="text-black rounded-3xl h-10
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold "
-                  >
+                  <button className="text-black rounded-3xl bg-heliotrope-300 border-heliotrope-300 text-s font-bold md:h-[40px] md:w-[130px] max-md:h-[40px] max-md:w-[130px]">
                     Produits
                   </button>
                 </Link>
 
                 <Link href="/nouveautes">
-                  <button
-                    className="text-black rounded-3xl h-10
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold 
-          "
-                  >
+                  <button className="text-black rounded-3xl bg-heliotrope-300 border-heliotrope-300 text-s font-bold md:h-[40px] md:w-[130px] max-md:h-[40px] max-md:w-[130px]">
                     Nouveautés
                   </button>
                 </Link>
 
                 <Link href="/promotions">
-                  <button
-                    className="text-black rounded-3xl h-10
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold 
-          "
-                  >
+                  <button className="text-black rounded-3xl bg-heliotrope-300 border-heliotrope-300 text-s font-bold md:h-[40px] md:w-[130px] max-md:h-[40px] max-md:w-[130px]">
                     Promotions
                   </button>
                 </Link>
               </div>
 
-              <div className="flex space-x-4 text-center pl-[400px]">
-                <div className="w-[40px]">
+              <div className="flex space-x-4 text-center pl-[570px]">
+                <div className="h-10 w-10">
+                  <Link href="/compte">
+                    <Image
+                      src="/compte.png"
+                      height={0}
+                      width={100}
+                      alt="compte"
+                      className="w-full h-auto text-black "
+                    />
+                  </Link>
+                </div>
+
+                <div className="h-10 w-10">
                   <Image
-                    src="/compte.png"
+                    src="/panier2.png"
                     height={0}
                     width={100}
-                    alt="compte"
-                    className="w-full h-auto text-black "
+                    alt="panier"
+                    className="w-full h-auto "
                   />
                 </div>
 
-                <Image
-                  src="/panier2.png"
-                  height={0}
-                  width={100}
-                  alt="panier"
-                  className="h-10 w-10"
-                />
-
-                <Image
-                  src="/materiel.png"
-                  height={0}
-                  width={100}
-                  alt="materiel"
-                  className="h-10 w-10"
-                />
+                <div className="h-10 w-10">
+                  <Image
+                    src="/materiel.png"
+                    height={0}
+                    width={100}
+                    alt="materiel"
+                    className="w-full h-auto "
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -96,7 +91,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li className="font-bold mt-[15px]">Contact</li>
             </ul>
 
-            <div className="flex space-x-4 text-center mt-[8px] pl-[770px]">
+            <div className="flex space-x-4 text-center mt-[8px] pl-[900px]">
               <Link href="https://www.facebook.com">
                 <Image
                   src="/facebook.png"
@@ -141,7 +136,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <br></br>
 
-          <p>Copyright © 2023 BERSERK Corporation</p>
+          <p>Copyright © 2023 InformatiX Corporation</p>
         </footer>
       </body>
     </html>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Commander() {
   return (
     <div className="bg-black text-white pt-[70px] pb-[250px] ">
-      <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[160px] ">
+      <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
         <Image
           src="/RTX4080.png"
           height={0}
