@@ -24,11 +24,14 @@ export default function Inscription() {
   };
 
   return (
-    <body className="bg-melrose-300">
+    <div className="bg-melrose-300">
       <div className="pt-[120px] text-center ">
-        <form className="bg-mine-shaft-800 text-white w-[450px] h-[550px] ml-[500px] mt-2 p-[40px] ">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-mine-shaft-800 text-white w-[450px] h-[550px] ml-[500px]
+          mt-2 p-[40px]"
+        >
           <p className="text-[25px] text-center pt-[20px]">Créer un compte</p>
-
           <label className="block pt-[20px]">
             <span className="block text-sm font-medium mr-[300px]">Nom</span>
             <input
@@ -43,7 +46,6 @@ export default function Inscription() {
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
             />
           </label>
-
           <label className="block pt-[20px]">
             <span className="block text-sm font-medium mr-[300px]">Prénom</span>
             <input
@@ -58,7 +60,6 @@ export default function Inscription() {
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
             />
           </label>
-
           <label className="block pt-[20px]">
             <span className="block text-sm font-medium mr-[300px]">E-mail</span>
             <input
@@ -73,7 +74,6 @@ export default function Inscription() {
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
             />
           </label>
-
           <label className="block pt-[20px]">
             <span className="block text-sm font-medium mr-[250px]">
               Mot de passe
@@ -90,12 +90,14 @@ export default function Inscription() {
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
             />
           </label>
-
-          <button className="bg-melrose-300 rounded-3xl h-10 w-36 mt-[30px]">
+          <button
+            type="submit"
+            className="bg-melrose-300 rounded-3xl h-10 w-36 mt-[30px]"
+          >
             Valider
           </button>
         </form>
       </div>
-    </body>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 import { MongoClient, Db } from "mongodb";
-const uri = "ton-uri";
+const uri =
+  "mongodb+srv://audic:5YYXPvU525L8AFCK@cluster0.nmggesf.mongodb.net/?retryWrites=true&w=majority";
 
 export async function connectionBaseDeDonner(): Promise<{
   client: MongoClient;

@@ -1,11 +1,33 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import React, { useState } from "react";
 
-export default function Connection() {
+import { ValiderConnexion } from "./servercomponent";
+export default function Connexion() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [adminLogger, setIsAdminLoggedIn] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    try {
+      await ValiderConnexion(email, password);
+      setEmail("");
+      setPassword("");
+      setIsAdminLoggedIn(email === "admin@admin" && password === "admin");
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
-    <body className="bg-melrose-300">
-      <div className="pt-[120px] text-center ">
-        <form className="bg-mine-shaft-800 text-white w-[450px] h-[550px] ml-[500px] mt-2 p-[40px] ">
+    <div className="bg-melrose-300">
+      <div className="pt-[90px] text-center pb-[80px]">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-mine-shaft-800 text-white w-[450px] h-[550px] ml-[500px] mt-2 p-[40px] "
+        >
           <p className="text-[25px] text-center pt-[20px]">Se connecter</p>
 
           <label className="block pt-[20px]">
@@ -13,6 +35,8 @@ export default function Connection() {
             <input
               type="email"
               required
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
               className="mt-1 block w-full px-3 py-2 bg-cod-gray-950 border border-cod-gray-950 rounded-3xl text-sm shadow-sm placeholder-slate-400
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -28,6 +52,8 @@ export default function Connection() {
             <input
               type="password"
               required
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
               className="mt-1 block w-full px-3 py-2 bg-cod-gray-950 border border-cod-gray-950 rounded-3xl text-sm shadow-sm placeholder-slate-400
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
@@ -55,7 +81,17 @@ export default function Connection() {
             Connexion
           </button>
         </form>
+
+        {adminLogger && (
+          <div className="text-center mt-4">
+            <Link href="/admin">
+              <div className="text-white underline cursor-pointer">
+                Accéder à lespace administrateur
+              </div>
+            </Link>
+          </div>
+        )}
       </div>
-    </body>
+    </div>
   );
 }

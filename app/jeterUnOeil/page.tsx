@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Produits() {
+export default function JeterUnOeil() {
   return (
     <div className="bg-black text-white pt-[70px] pb-20">
       <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
@@ -59,7 +59,7 @@ export default function Produits() {
           <p className="ml-[110px] ">1,400€</p>
           <button
             className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] ml-[60px]"
+        w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] ml-[60px]"
           >
             Acheter maintenant
           </button>
@@ -122,7 +122,7 @@ export default function Produits() {
             <p className="ml-[50px]">1,385€</p>
             <button
               className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+        w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
             >
               Acheter maintenant
             </button>
@@ -189,7 +189,7 @@ export default function Produits() {
             <p className="ml-[50px]">384,99€</p>
             <button
               className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+        w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
             >
               Acheter maintenant
             </button>
@@ -253,7 +253,7 @@ export default function Produits() {
             <p className="ml-[50px]">1,300€</p>
             <button
               className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+        w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
             >
               Acheter maintenant
             </button>
@@ -261,18 +261,17 @@ export default function Produits() {
         </div>
       </div>
 
-      <div className="bg-black text-white pt-[70px] pb-[20px] ">
-        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+      <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
-            src="/the-last-of-us.jpg"
+            src="/RTX4080.png"
             height={0}
-            width={250}
+            width={350}
             alt="jeu"
             className="ml-[40px] p-[20px]"
           />
-
-          <div className="mt-[40px] pl-[35px]">
-            <p className="font-bold">The las of us</p>
+          <div className="mt-[30px] pl-[20px]">
+            <p className="font-bold">NVIDIA GeForce RTX 4080</p>
 
             <div className="flex space-x-4 pt-[10px]">
               <div className="w-[10px] flex space-x-4 ">
@@ -284,62 +283,56 @@ export default function Produits() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>Action</p>
+              <p>Système de refroidissement: Fan</p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] flex space-x-4 ">
+              <div className="w-[10px] flex space-x-4 ">
                 <Image
-                  src="/bad-language.jpg"
-                  height={0}
-                  width={100}
-                  alt="langage grossier"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-
-              <div className="w-[50px] flex space-x-4 ">
-                <Image
-                  src="/violence.jpg"
+                  src="/fleche-droite.png"
                   height={0}
                   width={100}
                   alt="fleche-droite"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
+              <p>Fréquence Boost: 2.51 GHz</p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] ">
+              <div className="w-[10px] flex space-x-4 ">
                 <Image
-                  src="/pegi-18.jpg"
+                  src="/fleche-droite.png"
                   height={0}
                   width={100}
-                  alt="pegi 18"
+                  alt="fleche-droite"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
+              <p>Taille de la mémoire GPU: 16 GB</p>
             </div>
           </div>
-          <div className="mt-[70px] pl-[190px]">
-            <p className="ml-[50px] line-through">79,99€</p>
-            <p className="ml-[50px]">55,99€</p>
-            <button
-              className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
-            >
-              Acheter maintenant
-            </button>
 
+          <div className="float-right pl-[175px]">
             <div>
-              <Link href="/promotions">
+              <Link href="/nouveautes">
                 <button
-                  className="text-white
-           bg-red-700 border-red-700 w-[144px] "
+                  className="text-black font-bold
+     bg-yellow-400 border-yellow-400 w-[140px] ml-[120px]"
                 >
-                  -30%
+                  Nouveaux
                 </button>
               </Link>
+            </div>
+
+            <div className="mt-[30px] ">
+              <p className="ml-[50px]">1 400,00€</p>
+              <button
+                className="text-black h-12
+    w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
+              >
+                Acheter maintenant
+              </button>
             </div>
           </div>
         </div>
@@ -492,17 +485,19 @@ export default function Produits() {
       </div>
 
       <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] p-[10px]">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
-            src="/gta-5.jpg"
+            src="/Cooler Master.png"
             height={0}
-            width={220}
-            alt="Jeu Grand theft auto 5"
+            width={250}
+            alt="Processeur intel core i9"
             className="ml-[40px] "
           />
 
-          <div className="mt-[35px] pl-[55px]">
-            <p className="font-bold">Grand theft auto 5</p>
+          <div className="mt-[40px] ">
+            <p className="font-bold">
+              Cooler Master MasterLiquid ML240L V2 RGB
+            </p>
 
             <div className="flex space-x-4 pt-[10px]">
               <div className="w-[10px] flex space-x-4 ">
@@ -514,55 +509,39 @@ export default function Produits() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>Action</p>
+              <p>TDP : 200W</p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] flex space-x-4 ">
+              <div className="w-[17px] ">
                 <Image
-                  src="/bad-language.jpg"
-                  height={0}
-                  width={100}
-                  alt="langage grossier"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-
-              <div className="w-[50px] flex space-x-4 ">
-                <Image
-                  src="/violence.jpg"
+                  src="/fleche-droite.png"
                   height={0}
                   width={100}
                   alt="fleche-droite"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
+              <p>
+                2 ventilateurs 120 mm PWM LED RGB - Pression statique 2.36 mmH2O
+              </p>
+            </div>
 
-              <div className="w-[50px] flex space-x-4 ">
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[10px] ">
                 <Image
-                  src="/online.png"
+                  src="/fleche-droite.png"
                   height={0}
                   width={100}
                   alt="fleche-droite"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] ">
-                <Image
-                  src="/pegi-18.jpg"
-                  height={0}
-                  width={100}
-                  alt="pegi 18"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
+              <p>Vitesses ventilateur : 650-1800 RPM ± 10%</p>
             </div>
           </div>
-          <div className="mt-[70px] pl-[125px]">
-            <p className="ml-[50px]">24,99€</p>
+          <div className="mt-[70px] pr-[83px]">
+            <p className="ml-[50px]">79,94€</p>
             <button
               className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
@@ -574,79 +553,17 @@ export default function Produits() {
       </div>
 
       <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px]">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
-            src="/NBA-2K24.jpg"
+            src="/Corsair ICUE H150i.png"
             height={0}
-            width={240}
-            alt="Jeu NBA 2K23"
-            className="ml-[40px] p-[10px]"
-          />
-
-          <div className="mt-[70px] pl-[125px]">
-            <p className="font-bold">NBA 2K24</p>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>Sport</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] ">
-                <Image
-                  src="/pegi-3.jpg"
-                  height={0}
-                  width={100}
-                  alt="pegi 3"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="pl-[109px]">
-            <div className="float-right pl-[150px]">
-              <Link href="/nouveautes">
-                <button
-                  className="text-black font-bold
-           bg-yellow-400 border-yellow-400 w-[140px] ml-[165px]"
-                >
-                  Nouveaux
-                </button>
-              </Link>
-            </div>
-            <div className="mt-[90px]">
-              <p className="ml-[250px]">79,99€</p>
-              <button
-                className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] ml-[197px]"
-              >
-                Acheter maintenant
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] p-[10px]">
-          <Image
-            src="/call-of-duty-MW.jpg"
-            height={0}
-            width={220}
-            alt="Jeu call of duty moderne warfare"
+            width={250}
+            alt="Processeur intel core i9"
             className="ml-[40px] "
           />
 
-          <div className="mt-[40px] pl-[55px]">
-            <p className="font-bold">Call of duty Moderne Warfare II</p>
+          <div className="mt-[40px] ">
+            <p className="font-bold">Corsair ICUE H150i RGB ELITE</p>
 
             <div className="flex space-x-4 pt-[10px]">
               <div className="w-[10px] flex space-x-4 ">
@@ -658,55 +575,40 @@ export default function Produits() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>Action</p>
+              <p>Module Corsair Link (USB interne)</p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] flex space-x-4 ">
+              <div className="w-[17px] ">
                 <Image
-                  src="/bad-language.jpg"
+                  src="/fleche-droite.png"
                   height={0}
                   width={100}
-                  alt="langage grossier"
+                  alt="fleche-droite"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-
-              <div className="w-[50px] flex space-x-4 ">
-                <Image
-                  src="/violence.jpg"
-                  height={0}
-                  width={100}
-                  alt="Violence"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-
-              <div className="w-[50px] flex space-x-4 ">
-                <Image
-                  src="/in-game-purchase.jpg"
-                  height={0}
-                  width={100}
-                  alt="Achat en ligne"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
+              <p>
+                TWaterblock avec base en cuivre, pour une meilleure conductivité
+                de la chaleur
+              </p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[50px] ">
+              <div className="w-[10px] ">
                 <Image
-                  src="/pegi-18.jpg"
+                  src="/fleche-droite.png"
                   height={0}
                   width={100}
-                  alt="pegi 18"
+                  alt="fleche-droite"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
+              <p>Waterblock Capellix RGB avec 33 LED</p>
             </div>
           </div>
-          <div className="mt-[80px] pl-[65px]">
-            <p className="ml-[50px]">59,99€</p>
+          <div className="mt-[70px] pr-[83px]">
+            <p className="ml-[50px]">219,95€</p>
             <button
               className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
@@ -719,12 +621,12 @@ export default function Produits() {
 
       <div className="flex space-x-4 pl-[700px] mt-[70px]">
         <div>
-          <Link href="/produits2" className="text-red-600">
+          <Link href="/jeterUnOeil2" className="text-red-600">
             2
           </Link>
         </div>
         <div>
-          <Link href="/produits3" className="text-red-600">
+          <Link href="/jeterUnOeil3" className="text-red-600">
             3
           </Link>
         </div>

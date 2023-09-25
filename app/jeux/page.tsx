@@ -1,19 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Nouveautes() {
+export default function Jeux() {
   return (
-    <div className="bg-black text-white pt-20 ">
-      <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+    <div className="bg-black text-white pt-[70px] pb-[250px] ">
+      <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
         <Image
-          src="/RTX4080.png"
+          src="/the-last-of-us.jpg"
           height={0}
-          width={350}
+          width={250}
           alt="jeu"
           className="ml-[40px] p-[20px]"
         />
-        <div className="mt-[30px] pl-[20px]">
-          <p className="font-bold">NVIDIA GeForce RTX 4080</p>
+
+        <div className="mt-[40px] pl-[35px]">
+          <p className="font-bold">The las of us</p>
 
           <div className="flex space-x-4 pt-[10px]">
             <div className="w-[10px] flex space-x-4 ">
@@ -25,364 +26,144 @@ export default function Nouveautes() {
                 className="w-full h-auto pt-[8px]"
               />
             </div>
-            <p>Système de refroidissement: Fan</p>
+            <p>Action</p>
           </div>
 
           <div className="flex space-x-4 pt-[10px]">
-            <div className="w-[10px] flex space-x-4 ">
+            <div className="w-[50px] flex space-x-4 ">
               <Image
-                src="/fleche-droite.png"
+                src="/bad-language.jpg"
+                height={0}
+                width={100}
+                alt="langage grossier"
+                className="w-full h-auto pt-[8px]"
+              />
+            </div>
+
+            <div className="w-[50px] flex space-x-4 ">
+              <Image
+                src="/violence.jpg"
                 height={0}
                 width={100}
                 alt="fleche-droite"
                 className="w-full h-auto pt-[8px]"
               />
             </div>
-            <p>Fréquence Boost: 2.51 GHz</p>
           </div>
 
           <div className="flex space-x-4 pt-[10px]">
-            <div className="w-[10px] flex space-x-4 ">
+            <div className="w-[50px] ">
               <Image
-                src="/fleche-droite.png"
+                src="/pegi-18.jpg"
                 height={0}
                 width={100}
-                alt="fleche-droite"
+                alt="pegi 18"
                 className="w-full h-auto pt-[8px]"
               />
             </div>
-            <p>Taille de la mémoire GPU: 16 GB</p>
           </div>
         </div>
+        <div className="mt-[70px] pl-[190px]">
+          <p className="ml-[50px] line-through">79,99€</p>
+          <p className="ml-[50px]">55,99€</p>
+          <button
+            className="text-black h-12
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+          >
+            Acheter maintenant
+          </button>
 
-        <div className="float-right pl-[175px]">
           <div>
-            <Link href="/nouveautes">
+            <Link href="/promotions">
               <button
-                className="text-black font-bold
-     bg-yellow-400 border-yellow-400 w-[140px] ml-[120px]"
+                className="text-white
+           bg-red-700 border-red-700 w-[144px] "
               >
-                Nouveaux
+                -30%
               </button>
             </Link>
           </div>
+        </div>
+      </div>
 
-          <div className="mt-[30px] ">
-            <p className="ml-[50px]">1 400,00€</p>
+      <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] p-[10px]">
+          <Image
+            src="/gta-5.jpg"
+            height={0}
+            width={220}
+            alt="Jeu Grand theft auto 5"
+            className="ml-[40px] "
+          />
+
+          <div className="mt-[35px] pl-[55px]">
+            <p className="font-bold">Grand theft auto 5</p>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[10px] flex space-x-4 ">
+                <Image
+                  src="/fleche-droite.png"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+              <p>Action</p>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/bad-language.jpg"
+                  height={0}
+                  width={100}
+                  alt="langage grossier"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/violence.jpg"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/online.png"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] ">
+                <Image
+                  src="/pegi-18.jpg"
+                  height={0}
+                  width={100}
+                  alt="pegi 18"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-[70px] pl-[125px]">
+            <p className="ml-[50px]">24,99€</p>
             <button
               className="text-black h-12
-    w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
             >
               Acheter maintenant
             </button>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
-          <Image
-            src="/macbook-air-15.png"
-            height={0}
-            width={300}
-            alt="jeu"
-            className="ml-[40px] p-[20px]"
-          />
-          <div className="mt-[60px] pl-[40px]">
-            <p className="font-bold">Macbook Air 15 (Puce M2)</p>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>CPU 8 cœurs / GPU 10 cœurs</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>8 Go de mémoire unifiée</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>Stockage SSD de 256 Go</p>
-            </div>
-          </div>
-
-          <div className="float-right pl-[180px]">
-            <div>
-              <Link href="/nouveautes">
-                <button
-                  className="text-black font-bold
-     bg-yellow-400 border-yellow-400 w-[140px] ml-[120px]"
-                >
-                  Nouveaux
-                </button>
-              </Link>
-            </div>
-
-            <div className="mt-[50px] ">
-              <p className="ml-[50px]">1 599,00€</p>
-              <button
-                className="text-black h-12
-    w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
-              >
-                Acheter maintenant
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
-          <Image
-            src="/macbook-air-15.png"
-            height={0}
-            width={300}
-            alt="jeu"
-            className="ml-[40px] p-[20px]"
-          />
-          <div className="mt-[60px] pl-[40px]">
-            <p className="font-bold">Macbook Air 15 (Puce M2)</p>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>CPU 8 cœurs / GPU 10 cœurs</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>8 Go de mémoire unifiée</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>Stockage SSD de 512 Go</p>
-            </div>
-          </div>
-
-          <div className="float-right pl-[180px]">
-            <div>
-              <Link href="/nouveautes">
-                <button
-                  className="text-black font-bold
-     bg-yellow-400 border-yellow-400 w-[140px] ml-[120px]"
-                >
-                  Nouveaux
-                </button>
-              </Link>
-            </div>
-
-            <div className="mt-[50px] ">
-              <p className="ml-[50px]">1 829,00€</p>
-              <button
-                className="text-black h-12
-    w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
-              >
-                Acheter maintenant
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
-          <Image
-            src="/macbook-pro.png"
-            height={0}
-            width={300}
-            alt="jeu"
-            className="ml-[40px] p-[20px]"
-          />
-          <div className="mt-[60px] pl-[30px]">
-            <p className="font-bold">Macbook Pro 16 (Puce M2 pro)</p>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>CPU 12 cœurs / GPU 19 cœurs</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>16 Go de mémoire unifiée</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>Stockage SSD de 1 To¹</p>
-            </div>
-          </div>
-
-          <div className="float-right pl-[180px]">
-            <div>
-              <Link href="/nouveautes">
-                <button
-                  className="text-black font-bold
-     bg-yellow-400 border-yellow-400 w-[140px] ml-[120px]"
-                >
-                  Nouveaux
-                </button>
-              </Link>
-            </div>
-
-            <div className="mt-[50px] ">
-              <p className="ml-[50px]">3 229,00€</p>
-              <button
-                className="text-black h-12
-    w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
-              >
-                Acheter maintenant
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
-          <Image
-            src="/macbook-pro.png"
-            height={0}
-            width={300}
-            alt="jeu"
-            className="ml-[40px] p-[20px]"
-          />
-          <div className="mt-[60px] pl-[25px]">
-            <p className="font-bold">Macbook Pro 16 (Puce M2 max)</p>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>CPU 12 cœurs / GPU 38 cœurs</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>32 Go de mémoire unifiée</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>Stockage SSD de 1 To¹</p>
-            </div>
-          </div>
-
-          <div className="float-right pl-[180px]">
-            <div>
-              <Link href="/nouveautes">
-                <button
-                  className="text-black font-bold
-     bg-yellow-400 border-yellow-400 w-[140px] ml-[120px]"
-                >
-                  Nouveaux
-                </button>
-              </Link>
-            </div>
-
-            <div className="mt-[50px] ">
-              <p className="ml-[50px]">4 149,00€</p>
-              <button
-                className="text-black h-12
-    w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
-              >
-                Acheter maintenant
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -450,6 +231,88 @@ export default function Nouveautes() {
       </div>
 
       <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] p-[10px]">
+          <Image
+            src="/call-of-duty-MW.jpg"
+            height={0}
+            width={220}
+            alt="Jeu call of duty moderne warfare"
+            className="ml-[40px] "
+          />
+
+          <div className="mt-[40px] pl-[55px]">
+            <p className="font-bold">Call of duty Moderne Warfare II</p>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[10px] flex space-x-4 ">
+                <Image
+                  src="/fleche-droite.png"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+              <p>Action</p>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/bad-language.jpg"
+                  height={0}
+                  width={100}
+                  alt="langage grossier"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/violence.jpg"
+                  height={0}
+                  width={100}
+                  alt="Violence"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/in-game-purchase.jpg"
+                  height={0}
+                  width={100}
+                  alt="Achat en ligne"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] ">
+                <Image
+                  src="/pegi-18.jpg"
+                  height={0}
+                  width={100}
+                  alt="pegi 18"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-[80px] pl-[65px]">
+            <p className="ml-[50px]">59,99€</p>
+            <button
+              className="text-black h-12
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+            >
+              Acheter maintenant
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black text-white pt-20 ">
         <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
             src="/FC24.jpg"
@@ -512,16 +375,17 @@ export default function Nouveautes() {
       </div>
 
       <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
-            src="/imac-24.png"
+            src="/cod-mw3.jpg"
             height={0}
             width={250}
             alt="jeu"
             className="ml-[40px] p-[20px]"
           />
-          <div className="mt-[50px] pl-[90px]">
-            <p className="font-bold">iMac 24</p>
+
+          <div className="mt-[70px] pl-[35px]">
+            <p className="font-bold">Call of duty Moderne Warfare III</p>
 
             <div className="flex space-x-4 pt-[10px]">
               <div className="w-[10px] flex space-x-4 ">
@@ -533,37 +397,23 @@ export default function Nouveautes() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>CPU 8 cœurs / GPU 8 cœurs</p>
+              <p>Action</p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
+              <div className="w-[50px] ">
                 <Image
-                  src="/fleche-droite.png"
+                  src="/pegi-18.jpg"
                   height={0}
                   width={100}
-                  alt="fleche-droite"
+                  alt="pegi 18"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>8 Go de mémoire unifiée</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
-              <p>256 Go de stockage</p>
             </div>
           </div>
 
-          <div className="float-right pl-[175px]">
+          <div className="float-right pl-[60px]">
             <div>
               <Link href="/nouveautes">
                 <button
@@ -575,8 +425,8 @@ export default function Nouveautes() {
               </Link>
             </div>
 
-            <div className="mt-[30px] ">
-              <p className="ml-[50px]">1 779,00€</p>
+            <div className="mt-[70px] ">
+              <p className="ml-[50px]">79,99€</p>
               <button
                 className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "
@@ -588,17 +438,18 @@ export default function Nouveautes() {
         </div>
       </div>
 
-      <div className="bg-black text-white pt-20 pb-[50px]">
-        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px]">
+      <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
-            src="/imac-24.png"
+            src="/spider-man-2.jpg"
             height={0}
             width={250}
             alt="jeu"
             className="ml-[40px] p-[20px]"
           />
-          <div className="mt-[50px] pl-[90px]">
-            <p className="font-bold">iMac 24</p>
+
+          <div className="mt-[70px] pl-[35px]">
+            <p className="font-bold">Spider man 2</p>
 
             <div className="flex space-x-4 pt-[10px]">
               <div className="w-[10px] flex space-x-4 ">
@@ -610,21 +461,45 @@ export default function Nouveautes() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>CPU 8 cœurs / GPU 8 cœurs</p>
+              <p>Action</p>
             </div>
 
             <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] flex space-x-4 ">
+              <div className="w-[50px] ">
                 <Image
-                  src="/fleche-droite.png"
+                  src="/pegi-16.jpg"
                   height={0}
                   width={100}
-                  alt="fleche-droite"
+                  alt="pegi 18"
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>8 Go de mémoire unifiée</p>
             </div>
+          </div>
+          <div className="mt-[80px] pl-[203px]">
+            <p className="ml-[50px]">79,99€</p>
+            <button
+              className="text-black h-12
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+            >
+              Acheter maintenant
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+          <Image
+            src="/god-of-war.jpg"
+            height={0}
+            width={250}
+            alt="jeu"
+            className="ml-[40px] p-[20px]"
+          />
+
+          <div className="mt-[50px] pl-[35px]">
+            <p className="font-bold">God of war</p>
 
             <div className="flex space-x-4 pt-[10px]">
               <div className="w-[10px] flex space-x-4 ">
@@ -636,7 +511,112 @@ export default function Nouveautes() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>512 Go de stockage</p>
+              <p>Action</p>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/bad-language.jpg"
+                  height={0}
+                  width={100}
+                  alt="langage grossier"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/violence.jpg"
+                  height={0}
+                  width={100}
+                  alt="Violence"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] ">
+                <Image
+                  src="/pegi-18.jpg"
+                  height={0}
+                  width={100}
+                  alt="pegi 18"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-[80px] pl-[190px]">
+            <p className="ml-[50px]">79,99€</p>
+            <button
+              className="text-black h-12
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+            >
+              Acheter maintenant
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+          <Image
+            src="/FFxvi.jpg"
+            height={0}
+            width={250}
+            alt="jeu"
+            className="ml-[40px] p-[20px]"
+          />
+          <div className="mt-[50px] pl-[35px]">
+            <p className="font-bold">Final fantasy XVI</p>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[10px] flex space-x-4 ">
+                <Image
+                  src="/fleche-droite.png"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+              <p>Jeu de rôle</p>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/bad-language.jpg"
+                  height={0}
+                  width={100}
+                  alt="langage grossier"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+
+              <div className="w-[50px] flex space-x-4 ">
+                <Image
+                  src="/violence.jpg"
+                  height={0}
+                  width={100}
+                  alt="Violence"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+            </div>
+
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[50px] ">
+                <Image
+                  src="/pegi-18.jpg"
+                  height={0}
+                  width={100}
+                  alt="pegi 18"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
             </div>
           </div>
 
@@ -652,8 +632,8 @@ export default function Nouveautes() {
               </Link>
             </div>
 
-            <div className="mt-[30px] ">
-              <p className="ml-[50px]">2 009,00€</p>
+            <div className="mt-[70px] ">
+              <p className="ml-[50px]">79,99€</p>
               <button
                 className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] "

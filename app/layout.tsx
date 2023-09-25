@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 height={0}
                 width={100}
                 alt="Logo"
-                className="md:h-[140px] md:w-[130px] max-md:h-[140px] max-md:w-[130px] "
+                className=""
               />
             </Link>
 
@@ -39,7 +39,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               </div>
 
-              <div className="flex space-x-4 text-center pl-[570px]">
+              <div className="flex space-x-4 text-center pl-[600px]">
                 <div className="h-10 w-10">
                   <Link href="/connexion">
                     <Image
@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       height={0}
                       width={100}
                       alt="compte"
-                      className="w-full h-auto text-black "
+                      className="md:h-[40px] md:w-[100px] max-md:h-[40px] max-md:w-[100px]"
                     />
                   </Link>
                 </div>
@@ -58,7 +58,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     height={0}
                     width={100}
                     alt="panier"
-                    className="w-full h-auto "
+                    className="md:h-[40px] md:w-[100px] max-md:h-[40px] max-md:w-[130px]"
                   />
                 </div>
 
@@ -68,7 +68,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     height={0}
                     width={100}
                     alt="materiel"
-                    className="w-full h-auto "
+                    className="md:h-[40px] md:w-[100px] max-md:h-[40px] max-md:w-[130px] "
                   />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </header>
         <main>{children}</main>
 
-        <footer className="bg-white pb-10">
+        <footer className="bg-mine-shaft-800 text-white pb-10">
           <div className="flex space-x-4 text-center pl-[10px]">
             <ul>
               <li className="font-bold mt-[15px]">Aide</li>
@@ -114,7 +114,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
               <Link href="https://twitter.com">
                 <Image
-                  src="/twitter.png"
+                  src="/x.png"
                   height={0}
                   width={40}
                   alt="logo twitter"
@@ -136,7 +136,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <br></br>
 
-          <p>Copyright © 2023 InformatiX Corporation</p>
+          <p className="ml-[20px]">Copyright © 2023 InformatiX Corporation</p>
         </footer>
       </body>
     </html>
