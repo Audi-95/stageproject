@@ -3,80 +3,69 @@ import Link from "next/link";
 
 export default function Produits() {
   return (
-    <div className="bg-black text-white pt-[70px] pb-20">
-      <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
-        <Image
-          src="/MSI-RTX-4080.png"
-          height={0}
-          width={300}
-          alt="carte graphique"
-          className="ml-[40px] "
-        />
+    <div className="bg-black text-white pb-20">
+      <div className="bg-black text-white pt-20 ">
+        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+          <Image
+            src="/MSI-RTX-4080.png"
+            height={0}
+            width={300}
+            alt="Carte graphique"
+            className="ml-[40px] "
+          />
 
-        <div className="mt-[50px] ">
-          <p className="font-bold">MSI GeForce RTX 4080</p>
+          <div className="mt-[60px] pl-[30px]">
+            <p className="font-bold">MSI GeForce RTX 4080</p>
 
-          <div className="flex space-x-4 pt-[10px]">
-            <div className="w-[10px] flex space-x-4 ">
-              <Image
-                src="/fleche-droite.png"
-                height={0}
-                width={100}
-                alt="fleche-droite"
-                className="w-full h-auto pt-[8px]"
-              />
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[10px] flex space-x-4 ">
+                <Image
+                  src="/fleche-droite.png"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+              <p>Système de refroidissement: Fan</p>
             </div>
-            <p>Système de refroidissement: Fan</p>
-          </div>
 
-          <div className="flex space-x-4 pt-[10px]">
-            <div className="w-[10px] ">
-              <Image
-                src="/fleche-droite.png"
-                height={0}
-                width={100}
-                alt="fleche-droite"
-                className="w-full h-auto pt-[8px]"
-              />
+            <div className="flex space-x-4 pt-[10px]">
+              <div className="w-[10px] ">
+                <Image
+                  src="/fleche-droite.png"
+                  height={0}
+                  width={100}
+                  alt="fleche-droite"
+                  className="w-full h-auto pt-[8px]"
+                />
+              </div>
+              <p>Taille de la mémoire GPU: 16 GB</p>
             </div>
-            <p>Fréquence Boost: 2.51 GHz</p>
           </div>
-
-          <div className="flex space-x-4 pt-[10px]">
-            <div className="w-[10px] ">
-              <Image
-                src="/fleche-droite.png"
-                height={0}
-                width={100}
-                alt="fleche-droite"
-                className="w-full h-auto pt-[8px]"
-              />
-            </div>
-            <p>Taille de la mémoire GPU: 16 GB</p>
+          <div className="mt-[60px] pl-[160px]">
+            <p className="ml-[52px]">1 400€</p>
+            <button
+              className="text-black h-12
+          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
+            >
+              Acheter maintenant
+            </button>
           </div>
-        </div>
-        <div className="mt-[60px] ">
-          <p className="ml-[110px] ">1,400€</p>
-          <button
-            className="text-black h-12
-          w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px] ml-[60px]"
-          >
-            Acheter maintenant
-          </button>
         </div>
       </div>
 
       <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] p-[5px]">
+        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
             src="/ichill-RTX-4080.png"
             height={0}
-            width={400}
-            alt="carte graphique"
-            className="ml-[40px] "
+            width={300}
+            alt="Carte graphique"
+            className="ml-[40px] mt-[20px]"
           />
 
-          <div className="mt-[70px] ">
+          <div className="mt-[45px] pl-[30px]">
             <p className="font-bold">Ichill GeForce RTX 4080</p>
 
             <div className="flex space-x-4 pt-[10px]">
@@ -102,24 +91,11 @@ export default function Produits() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>Fréquence Boost: 2.51 GHz</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
               <p>Taille de la mémoire GPU: 16 GB</p>
             </div>
           </div>
-          <div className="mt-[70px] ">
-            <p className="ml-[50px]">1,385€</p>
+          <div className="mt-[40px] pl-[160px]">
+            <p className="ml-[52px]">1 385€</p>
             <button
               className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
@@ -136,7 +112,7 @@ export default function Produits() {
             src="/intel-i5.png"
             height={0}
             width={250}
-            alt="Processeur intel core i5"
+            alt="Processeur intel core i7"
             className="ml-[40px] "
           />
 
@@ -185,8 +161,8 @@ export default function Produits() {
               <p>Cache L3 24 Mo + Cache L2 20 Mo</p>
             </div>
           </div>
-          <div className="mt-[70px] pr-[83px]">
-            <p className="ml-[50px]">384,99€</p>
+          <div className="mt-[60px] pr-[115px]">
+            <p className="ml-[52px]">384,99€</p>
             <button
               className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
@@ -198,16 +174,16 @@ export default function Produits() {
       </div>
 
       <div className="bg-black text-white pt-20 ">
-        <div className="flex space-x-20 bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
+        <div className="flex space-x-[0px] bg-mine-shaft-800 rounded-sm w-[1050px] ml-[200px] ">
           <Image
             src="/GB-RTX-4080.png"
             height={0}
-            width={300}
-            alt=""
+            width={250}
+            alt="Carte graphique"
             className="ml-[40px] "
           />
 
-          <div className="mt-[70px] ">
+          <div className="mt-[60px] pl-[90px]">
             <p className="font-bold">GigaByte GeForce RTX 4080</p>
 
             <div className="flex space-x-4 pt-[10px]">
@@ -233,24 +209,11 @@ export default function Produits() {
                   className="w-full h-auto pt-[8px]"
                 />
               </div>
-              <p>Fréquence Boost: 2.51 GHz</p>
-            </div>
-
-            <div className="flex space-x-4 pt-[10px]">
-              <div className="w-[10px] ">
-                <Image
-                  src="/fleche-droite.png"
-                  height={0}
-                  width={100}
-                  alt="fleche-droite"
-                  className="w-full h-auto pt-[8px]"
-                />
-              </div>
               <p>Taille de la mémoire GPU: 16 GB</p>
             </div>
           </div>
-          <div className="mt-[70px] pl-[60px]">
-            <p className="ml-[50px]">1,300€</p>
+          <div className="mt-[60px] pl-[150px]">
+            <p className="ml-[52px]">1 300€</p>
             <button
               className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"
@@ -430,7 +393,7 @@ export default function Produits() {
             src="/intel-i9.png"
             height={0}
             width={250}
-            alt="Processeur intel core i9"
+            alt="Processeur intel core i7"
             className="ml-[40px] "
           />
 
@@ -479,8 +442,8 @@ export default function Produits() {
               <p>Cache L3 36 Mo + Cache L2 32 Mo</p>
             </div>
           </div>
-          <div className="mt-[70px] pr-[83px]">
-            <p className="ml-[50px]">759,99€</p>
+          <div className="mt-[60px] pr-[115px]">
+            <p className="ml-[52px]">759,99€</p>
             <button
               className="text-black h-12
           w-36 bg-heliotrope-300 border-heliotrope-300 text-s font-bold mt-[20px]"

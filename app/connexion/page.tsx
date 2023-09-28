@@ -62,16 +62,9 @@ export default function Connexion() {
             />
           </label>
 
-          <div className="space-y-0">
-            <div className="mt-[10px]">
-              <Link href="/password" className="text-blue-600 ">
-                Mot de passe oublier ?
-              </Link>
-            </div>
-
-            <br></br>
+          <div className="space-y-0 pt-[20px]">
             <div>
-              <Link href="/inscription" className="text-blue-600 ">
+              <Link href="/inscription" className="text-blue-600">
                 Créer un compte
               </Link>
             </div>

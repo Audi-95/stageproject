@@ -77,21 +77,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </header>
         <main>{children}</main>
 
-        <footer className="bg-mine-shaft-800 text-white pb-10">
-          <div className="flex space-x-4 text-center pl-[10px]">
-            <ul>
-              <li className="font-bold mt-[15px]">Aide</li>
-            </ul>
-
-            <ul>
-              <li className="font-bold mt-[15px]">À propos de nous</li>
-            </ul>
-
-            <ul>
-              <li className="font-bold mt-[15px]">Contact</li>
-            </ul>
-
-            <div className="flex space-x-4 text-center mt-[8px] pl-[900px]">
+        <footer className="bg-mine-shaft-800 text-white ">
+          <div className="flex space-x-4 text-center pl-[10px] pb-[80px]">
+            <div className="flex space-x-4 text-center mt-[8px] pl-[1150px]">
               <Link href="https://www.facebook.com">
                 <Image
                   src="/facebook.png"
@@ -133,10 +121,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             </div>
           </div>
-
-          <br></br>
-
-          <p className="ml-[20px]">Copyright © 2023 InformatiX Corporation</p>
         </footer>
       </body>
     </html>

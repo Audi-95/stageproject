@@ -462,7 +462,7 @@ export default function Produits3() {
               className="ml-[40px] p-[20px]"
             />
 
-            <div className="mt-[80px]">
+            <div className="mt-[80px] pl-[60px]">
               <p className="font-bold">CSL Sprint 5771 (Ryzen 7) - DLSS3</p>
 
               <div className="flex space-x-4 pt-[10px]">
@@ -518,7 +518,7 @@ export default function Produits3() {
               </div>
             </div>
 
-            <div className="mt-[70px] pl-[140px]">
+            <div className="mt-[70px] pl-[130px]">
               <p className="ml-[40px] line-through">1 999,90€</p>
               <p className="ml-[40px]">1 199,00€</p>
               <button
